@@ -14,17 +14,17 @@ const PlaceItem = (props) => {
 
   return (
     <React.Fragment>
-      <Modal 
-        show={showMap} 
-        onCancel={closeMapHandler} 
-        header={props.address} 
+      <Modal
+        show={showMap}
+        onCancel={closeMapHandler}
+        header={props.address}
         contentClass="place-item__modal-content"
-        footerClass="place-item__modal-actions" 
+        footerClass="place-item__modal-actions"
         footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
       >
-          <div className="map-container">
-            <h2>THE MAP!</h2>
-          </div>
+        <div className="map-container">
+          <h2>THE MAP!</h2>
+        </div>
       </Modal>
       <li className="place-item">
         <Card className="place-item__content">
